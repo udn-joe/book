@@ -7,7 +7,7 @@ permissions:
    - object: /tmp/booker
      pattern: "**"
      owner: ec2-user
-     group: users
+     group: ec2-user
      mode: 755
      type:
        - file
