@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /tmp/booker
+permissions:
+   - object: /tmp/booker
+     pattern: "**"
+     owner: ec2-user
+     group: users
+     mode: 755
+     type:
+       - file
+hooks:
+   AfterInstall:
+    - location: restart.sh
+      runas: root
+
