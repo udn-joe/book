@@ -13,6 +13,3 @@ permissions:
        - file
 hooks:
    AfterInstall:
-    - location: restart.sh
-      runas: ec2-user
-
